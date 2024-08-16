@@ -22,4 +22,24 @@ public class EnclosureServiceImpl implements EnclosureService{
     public void removeWaste(int waste) {
 
     }
+
+    @Override
+    public void getFoodStore() {
+
+    }
+
+    @Override
+    public void getWasteSize() {
+
+    }
+
+    @Override
+    public void sizeAnimalInTheEnclosure() {
+
+    }
+
+    @Override
+    public boolean aMonthPasses() {
+        return false;
+    }
 }
