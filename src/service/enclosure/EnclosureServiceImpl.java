@@ -25,7 +25,7 @@ public class EnclosureServiceImpl implements EnclosureService{
 
     @Override
     public void getFoodStore() {
-
+        
     }
 
     @Override

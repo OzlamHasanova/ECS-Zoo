@@ -4,17 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Enclosure {
-    private Integer id;
+    private Integer number;
     private List<Animal> animals= new ArrayList<>();
+    private List<Zookeeper> zookeepers=new ArrayList<>();
     private List<FoodStore> foodList;
     private int waste;
 
-    public Integer getId() {
-        return id;
+    public Integer getNumber() {
+        return number;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId(Integer number) {
+        this.number = number;
+    }
+
+    public List<Zookeeper> getZookeepers() {
+        return zookeepers;
+    }
+
+    public void setZookeepers(List<Zookeeper> zookeepers) {
+        this.zookeepers = zookeepers;
     }
 
     public List<Animal> getAnimals() {
