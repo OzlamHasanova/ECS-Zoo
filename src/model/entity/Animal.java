@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Animal {
     private Integer id;
+    private String name;
     private int age;
     private char gender;
     private List<String> eats;
@@ -14,8 +15,9 @@ public class Animal {
     public Animal() {
     }
 
-    public Animal(Integer id, int age, char gender, List<String> eats, int health, int lifeExpectancy) {
+    public Animal(Integer id,String name, int age, char gender, List<String> eats, int health, int lifeExpectancy) {
         this.id = id;
+        this.name = name;
         this.age = age;
         this.gender = gender;
         this.eats = eats;
@@ -23,12 +25,21 @@ public class Animal {
         this.lifeExpectancy = lifeExpectancy;
     }
 
+
     public Integer getId() {
         return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
@@ -77,5 +88,17 @@ public class Animal {
 
     public void setEnclosure(Enclosure enclosure) {
         this.enclosure = enclosure;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name="+name+
+                ", age=" + age +
+                ", gender=" + gender +
+                ", eats=" + eats +
+                ", health=" + health +
+                ", lifeExpectancy=" + lifeExpectancy +
+                '}'+"\n";
     }
 }

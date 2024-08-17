@@ -5,10 +5,18 @@ import java.util.List;
 
 public class Enclosure {
     private Integer number;
-    private List<Animal> animals= new ArrayList<>();
-    private List<Zookeeper> zookeepers=new ArrayList<>();
+    private List<Animal> animals;
+    private List<Zookeeper> zookeepers;
     private List<FoodStore> foodList;
     private int waste;
+
+    public Enclosure(Integer number, List<Animal> animals, List<Zookeeper> zookeepers, List<FoodStore> foodList, int waste) {
+        this.number = number;
+        this.animals = animals;
+        this.zookeepers = zookeepers;
+        this.foodList = foodList;
+        this.waste = waste;
+    }
 
     public Integer getNumber() {
         return number;

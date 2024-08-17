@@ -2,7 +2,7 @@ package model.entity;
 
 public class FoodStore {
     private Integer id;
-    private String name;
+    private java.lang.String name;
     private int health;
     private int waste;
     private int quantity;
@@ -10,7 +10,7 @@ public class FoodStore {
     public FoodStore() {
     }
 
-    public FoodStore(Integer id, String name, int health, int waste, int quantity) {
+    public FoodStore(Integer id, java.lang.String name, int health, int waste, int quantity) {
         this.id = id;
         this.name = name;
         this.health = health;
@@ -26,11 +26,11 @@ public class FoodStore {
         this.id = id;
     }
 
-    public String getName() {
+    public java.lang.String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(java.lang.String name) {
         this.name = name;
     }
 

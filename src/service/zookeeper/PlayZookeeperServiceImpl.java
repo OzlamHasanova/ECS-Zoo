@@ -1,5 +1,7 @@
 package service.zookeeper;
 
+import model.entity.Animal;
+
 public class PlayZookeeperServiceImpl implements ZookeeperService{
     @Override
     public void stroke() {
@@ -7,7 +9,7 @@ public class PlayZookeeperServiceImpl implements ZookeeperService{
     }
 
     @Override
-    public void huge() {
+    public void huge(Animal animal) {
 
     }
 
